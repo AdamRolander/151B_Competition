@@ -13,6 +13,8 @@ infer.run_inference().
 """
 import sys
 from pathlib import Path
+import os
+os.environ.setdefault("VLLM_USE_DEEP_GEMM", "0")
 
 # infer.py lives one level below the repo root (e.g. src/infer.py).
 # Locate it automatically and put its directory on the import path so its
