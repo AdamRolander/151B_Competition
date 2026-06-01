@@ -9,7 +9,7 @@ voting.
 ## Hardware & runtime
 
 - **GPU:** NVIDIA RTX 5090
-- **Approximate total inference time on the private set (502 questions):** 7 hours
+- **Approximate total inference time on the private set:** 7 hours
 - Single GPU, bf16, no quantization. vLLM serves the base model and applies the
   FRQ adapter per-request, so only one model is resident in VRAM.
 
